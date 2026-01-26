@@ -15,7 +15,13 @@ print()
 
 
 """c"""
-num = int(input("Enter a number: "))
-print("*" * num)
+number_of_stars = int(input("Enter a number: "))
+print("*" * number_of_stars)
 print()
 
+
+"""d"""
+number_of_stars = int(input("Enter a number: "))
+for i in range(1,number_of_stars+1):
+    print("*" * i)
+print()
