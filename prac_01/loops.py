@@ -12,3 +12,10 @@ print()
 for i in range(20, 0, -1):
     print(i, end=' ')
 print()
+
+
+"""c"""
+num = int(input("Enter a number: "))
+print("*" * num)
+print()
+
