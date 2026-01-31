@@ -14,9 +14,7 @@ def main():
 def check_choice(choice,MENU):
     while choice != "Q":
         if choice == "C":
-            celsius = float(input("Celsius: "))
-            fahrenheit = celsius * 9.0 / 5 + 32
-            print(f"Result: {fahrenheit:.2f} F")
+            c_to_f()
         elif choice == "F":
             fahrenheit = float(input("Fahrenheit : "))
             celsius = 5 / 9 * (fahrenheit - 32)
@@ -26,3 +24,8 @@ def check_choice(choice,MENU):
         print(MENU)
         choice = input(">>> ").upper()
     print("Thank you.")
+
+def c_to_f():
+    celsius = float(input("Celsius: "))
+    fahrenheit = celsius * 9.0 / 5 + 32
+    print(f"Result: {fahrenheit:.2f} F")
