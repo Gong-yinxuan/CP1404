@@ -32,3 +32,5 @@ def f_to_c():
     fahrenheit = float(input("Fahrenheit : "))
     celsius = 5 / 9 * (fahrenheit - 32)
     print(f"Result: {celsius:.2f} C")
+
+main()
