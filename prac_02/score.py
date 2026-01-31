@@ -7,6 +7,9 @@ def main():
     result = check_score(score)
     print(f"User score {score} is {result}")
 
+    if result == "Excellent":
+        print("Excellent")
+
 def check_score(score):
     if score < 0 or score > 100:
         return "Invalid score"
