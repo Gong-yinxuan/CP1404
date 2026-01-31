@@ -27,7 +27,14 @@ def main():
             if score is not None:
                 show_stars(score)
             else:
-                print("No score entered yet. Please get a valid score")
+                 print("No score entered yet. Please get a valid score")
+
+        elif choice == "Q":
+            print("Goodbye")
+
+        else:
+            print("Invalid choice. Please try again.")
+
 
 
 def get_valid_score():
@@ -52,4 +59,6 @@ def check_score(score):
 def show_stars(score):
         stars = "*" * int(score)
         print(stars)
+
+main()
 
