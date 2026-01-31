@@ -16,9 +16,7 @@ def check_choice(choice,MENU):
         if choice == "C":
             c_to_f()
         elif choice == "F":
-            fahrenheit = float(input("Fahrenheit : "))
-            celsius = 5 / 9 * (fahrenheit - 32)
-            print(f"Result: {celsius:.2f} C")
+            f_to_c()
         else:
             print("Invalid option")
         print(MENU)
@@ -29,3 +27,8 @@ def c_to_f():
     celsius = float(input("Celsius: "))
     fahrenheit = celsius * 9.0 / 5 + 32
     print(f"Result: {fahrenheit:.2f} F")
+
+def f_to_c():
+    fahrenheit = float(input("Fahrenheit : "))
+    celsius = 5 / 9 * (fahrenheit - 32)
+    print(f"Result: {celsius:.2f} C")
