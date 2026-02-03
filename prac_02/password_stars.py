@@ -1,6 +1,8 @@
 PASSWORD_LENGTH = 10
 
-
+def main():
+    password = validate_password()
+    print(len(password) * "*")
 
 
 def validate_password():
