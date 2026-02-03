@@ -19,3 +19,11 @@ num1 = int(first_line)
 num2 = int(second_line)
 sum = num1 + num2
 print(sum)
+
+# 4.
+total = 0
+with open("numbers.txt", "r") as in_file:
+    for line in in_file:
+        total += int(line)
+
+print(total)
