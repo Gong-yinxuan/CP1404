@@ -1,0 +1,10 @@
+On day 1 prices is: $10.84
+On day 2 prices is: $11.24
+On day 3 prices is: $12.04
+On day 4 prices is: $12.32
+On day 5 prices is: $9.71
+On day 6 prices is: $3.06
+On day 7 prices is: $0.45
+On day 1 prices is: $10.73
+On day 2 prices is: $10.52
+On day 3 prices is: $-7.64
