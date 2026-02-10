@@ -5,17 +5,17 @@ Starter code for cumulative total income program
 
 
 def main():
-    """Display income report for incomes over a given number of months."""
+    """Display income report for incomes over a given number of month_count."""
     incomes = []
-    months = int(input("How many months? "))
+    month_count = int(input("How many month_count? "))
 
-    for month in range(1, months + 1):
+    for month in range(1, month_count + 1):
         income = float(input(f"Enter income for month {str(month)}: "))
         incomes.append(income)
 
     print("\nIncome Report\n-------------")
     total = 0
-    for month in range(1, months + 1):
+    for month in range(1, month_count + 1):
         income = incomes[month - 1]
         total += income
         print(f"Month{month: 2} - Income: ${income:10.2f} Total: ${total:10.2f}")
