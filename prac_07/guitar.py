@@ -18,14 +18,20 @@ class Guitar:
 
 def main():
     guitars = load_guitar(FILENAME)
+    print_guitar(guitars)
 
 def load_guitar(filename):
-    guitar = []
+    guitars = []
     with open(filename, newline='') as file:
         for line in file:
             name, year, cost = line.strip().split(',')
-            guitar.append(Guitar(name, int(year), float(cost)))
-    return guitar
+            guitars.append(Guitar(name, int(year), float(cost)))
+    return guitars
+
+def print_guitar(guitar):
+    for guitar in guitar:
+        print(guitar)
+
 
 
 
