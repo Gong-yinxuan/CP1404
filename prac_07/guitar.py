@@ -1,3 +1,4 @@
+FILENAME = 'guitar.csv'
 class Guitar:
     def __init__(self, name="", year=0, cost=0):
         self.name = name
@@ -14,6 +15,21 @@ class Guitar:
 
     def is_vintage(self):
         return self.get_age() >= 50
+
+def main():
+    guitars = load_guitar(FILENAME)
+
+def load_guitar(filename):
+    guitar = []
+    with open(filename, newline='') as file:
+        for line in file:
+            name, year, cost = line.strip().split(',')
+            guitar.append(Guitar(name, int(year), float(cost)))
+    return guitar
+
+
+
+
 
 
 
