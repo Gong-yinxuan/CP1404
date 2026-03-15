@@ -8,4 +8,15 @@ HEX_COLOURS = {"Absolute Zero": "#0048ba",
                "AntiqueWhite": "#9966cc",
                "AntiqueWhite2": "#66c2a5",
                "AntiqueWhite3": "#66c2a5",}
+
 print(HEX_COLOURS)
+
+colour_input = input("Enter the colour name:")
+while colour_input != "":
+    if colour_input in HEX_COLOURS:
+        print(colour_input, "is", HEX_COLOURS[colour_input])
+    else:
+        print("Invalid short state")
+    colour_input = input("Enter short state: ")
+
+
