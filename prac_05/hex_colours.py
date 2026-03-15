@@ -8,4 +8,4 @@ HEX_COLOURS = {"Absolute Zero": "#0048ba",
                "AntiqueWhite": "#9966cc",
                "AntiqueWhite2": "#66c2a5",
                "AntiqueWhite3": "#66c2a5",}
-
+print(HEX_COLOURS)
