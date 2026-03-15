@@ -7,3 +7,5 @@ for word in text.split():
         word_counts[word] += 1
     else:
         word_counts[word] = 1
+
+max_word_length = max(len(word) for word in word_counts)
