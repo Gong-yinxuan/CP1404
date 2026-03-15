@@ -9,3 +9,5 @@ for word in text.split():
         word_counts[word] = 1
 
 max_word_length = max(len(word) for word in word_counts)
+for word in sorted(word_counts):
+    print(f"{word:{max_word_length}}: {word_counts[word]}")
