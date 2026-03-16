@@ -16,3 +16,6 @@ with open(FILENAME, "r", encoding="utf-8") as in_file:
         else:
             data[champion] += 1
 
+print("Wimbledon Champions:")
+for champion, count in data.items():
+    print(f"{champion} {count}")
