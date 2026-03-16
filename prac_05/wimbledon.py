@@ -21,3 +21,7 @@ with open(FILENAME, "r", encoding="utf-8") as in_file:
 print("Wimbledon Champions:")
 for champion, count in data.items():
     print(f"{champion} {count}")
+
+print(f"\nThese {champion_count} countries have won Wimbledon:")
+for country in sorted(countries):
+    print(country, end = ' ')
